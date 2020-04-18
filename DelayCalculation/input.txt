@@ -1,0 +1,12 @@
+.MACRO net1
+++ pin1_in
++ pin2_in
++ pin3_out
+R1 pin1_in n1 1
+R2 pin2_in n1 1
+R3 n1 pin3_out 1
+C1 pin1_in VSS 1e-15
+C2 pin2_in VSS 2e-15
+C3 pin3_out VSS 3e-15
+C4 n1 VSS 1e-15
+.EOM
